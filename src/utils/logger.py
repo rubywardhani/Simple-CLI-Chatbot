@@ -5,7 +5,7 @@ from ..config import LOG_DIR, LOG_FILE, LOG_LEVEL
 
 def get_logger():
     """
-    Initialize and return a logger.
+    Configure and return a logger.
     """
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
@@ -17,4 +17,5 @@ def get_logger():
         formatter = logging.Formatter('%(asctime)s - %(message)s')
         handler.setFormatter(formatter)
         logger.addHandler(handler)
+
     return logger

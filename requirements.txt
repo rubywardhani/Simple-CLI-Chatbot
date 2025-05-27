@@ -1,1 +1,1 @@
-# Core dependencies (none for this basic project)
+# No external dependencies required

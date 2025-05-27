@@ -9,13 +9,12 @@ class TestChatBot(unittest.TestCase):
     def test_greeting(self):
         self.assertIn("Hello", self.bot.greeting)
 
-    def test_response_known(self):
-        response = self.bot.get_response("hello")
-        self.assertEqual(response, "Hi there!")
+    def test_known_response(self):
+        self.assertEqual(self.bot.get_response("hello"), "Hi there!")
 
-    def test_response_unknown(self):
-        response = self.bot.get_response("unknown input")
-        self.assertEqual(response, "Sorry, I don't understand.")
+    def test_unknown_response(self):
+        self.assertEqual(self.bot.get_response("who are you"),
+                         "Sorry, I don't understand.")
 
 
 if __name__ == "__main__":

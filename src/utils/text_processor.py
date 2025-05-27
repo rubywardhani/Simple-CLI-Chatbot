@@ -1,5 +1,5 @@
 def normalize_text(text: str) -> str:
     """
-    Normalize user input (e.g., lowercase, strip whitespace).
+    Normalize text to lower-case and remove extra whitespace.
     """
     return text.lower().strip()

@@ -8,6 +8,6 @@ class ChatBot:
 
     def get_response(self, user_input: str) -> str:
         """
-        Get chatbot response from user input.
+        Get chatbot response based on user input.
         """
         return handle_response(user_input)
