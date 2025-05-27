@@ -58,7 +58,7 @@ Simple-CLI-Chatbot/
    ```
 
 3. **Mulai mengobrol!**
-   ```
+   ```bash
 Hello! I'm your CLI chatbot. Type 'exit' to quit.
 --------------------------------------------------
 
@@ -76,4 +76,4 @@ Hello! I'm your CLI chatbot. Type 'exit' to quit.
 
 ```
 
-**Selamat mencoba dan happy coding! 🚀**
+## Selamat mencoba dan happy coding! 🚀
