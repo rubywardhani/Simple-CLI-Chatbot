@@ -1,79 +1,75 @@
-# 🤖 Chatbot CLI Sederhana
+# 🤖 Simple CLI Chatbot
 
-Chatbot sederhana berbasis Command Line Interface (CLI) yang dibuat dengan Python. Chatbot ini dirancang dengan struktur modular dan clean, cocok untuk latihan dan pengembangan lanjutan.
-
----
-
-## ✨ Fitur
-
-- ✅ Interface CLI yang user-friendly  
-- 🧠 Response berdasarkan keyword dan pattern  
-- 📝 Logging percakapan otomatis ke file  
-- 🧱 Struktur kode modular dan scalable  
-- 🧪 Unit testing dengan pytest  
-- 🛠️ Tidak menggunakan dependency eksternal  
+A simple Command Line Interface (CLI) chatbot built with Python. This chatbot is designed with a modular and clean code structure, suitable for practice and further development.
 
 ---
 
-## 🏗️ Struktur Folder
+## ✨ Features
+
+- ✅ User-friendly CLI interface  
+- 🧠 Keyword and pattern-based responses  
+- 🧱 Modular and scalable code structure
+- 🛠️ No external dependencies (standard library only)  
+
+---
+
+## 🏗️ Project Structure
 
 ```
 Simple-CLI-Chatbot/
-├── main.py                     # Entry point utama
-├── requirements.txt            # Dependencies
-├── requirements-dev.txt        # Dependencies
-├── logs/                       # Folder untuk file log
-│   └── conversation.log        # Log percakapan (dibuat otomatis)
-└── src/                        # Source code utama
-    ├── chatbot.py              # Core logic chatbot
-    ├── config.py               # Konfigurasi chatbot
-    ├── responses/              # Module untuk response
-    │   ├── response_handler.py # Handler untuk response
-    │   └── response_data.py    # Data keyword dan response
-    └── utils/                  # Utilities
-        ├── logger.py           # Logger untuk percakapan
-        └── text_processor.py   # Processor untuk text input
+├── main.py                     # Main entry point
+├── requirements.txt            # Production dependencies
+├── requirements-dev.txt        # Development dependencies
+├── logs/                       # Log files folder
+│   └── conversation.log        # Chat log (created automatically)
+└── src/                        # Main source code
+    ├── chatbot.py              # Core chatbot logic
+    ├── config.py               # Chatbot configuration
+    ├── responses/              # Response module
+    │   ├── response_handler.py # Response handler
+    │   └── response_data.py    # Keyword and response data
+    └── utils/                  # Utility functions
+        ├── logger.py           # Conversation logger
+        └── text_processor.py   # Text input processor
 ```
 
-## 🚀 Cara Menjalankan
+## 🚀 Getting Started
 
-### Persyaratan
-- Python 3.6 atau lebih baru
-- Tidak ada dependencies eksternal (menggunakan standard library)
+### Requirements
+- Python 3.6 or higher
+- No external dependencies (uses standard library only)
 
-### Langkah-langkah
+### Steps
 
-1. **Clone atau download project ini**
+1. **Clone or download this project**
    ```bash
-   # Jika menggunakan git
+   # If using git
    git clone <repository-url>
    cd chatbot-cli
    
-   # Atau extract jika download zip
+   # Or extract if downloaded as a zip
    ```
 
-2. **Jalankan chatbot**
+2. **Run the chatbot**
    ```bash
    python main.py
    ```
 
-3. **Mulai mengobrol!**
+3. **Start chatting!**
    ```bash
-Hello! I'm your CLI chatbot. Type 'exit' to quit.
---------------------------------------------------
+   Hello! I'm your CLI chatbot. Type 'exit' to quit.
+   --------------------------------------------------
+   🧑 You: Hello
+   🤖 Bot: Hi there!
+   
+   🧑 You: How are you?
+   🤖 Bot: I'm just a bunch of code, but I'm doing great!
+   
+   🧑 You: Help
+   🤖 Bot: Type something like 'hello', or 'how are you'. Type 'exit' to quit.
+   
+   🧑 You: what is your name
+   🤖 Bot: I'm a simple CLI chatbot.
+   ```
 
-🧑 Anda: Halo
-🤖 Bot: Halo juga! Ada yang bisa saya bantu?
-
-🧑 Anda: Apa kabar?
-🤖 Bot: Saya baik-baik saja, terima kasih! Bagaimana dengan Anda?
-
-🧑 Anda: Terima kasih
-🤖 Bot: Sama-sama! Senang bisa membantu 😊
-
-🧑 Anda: bye
-🤖 Bot: Terima kasih! Sampai jumpa lagi! 👋
-
-```
-
-## Selamat mencoba dan happy coding! 🚀
+## Enjoy coding and have fun! 🚀
